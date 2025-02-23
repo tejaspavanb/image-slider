@@ -1,0 +1,40 @@
+.container{
+    position: relative;
+    width: 100%;
+    margin:auto;
+    overflow: hidden;
+}
+.innercontainer img{
+    width:100%;
+    display:none;
+}
+.slider{
+    display: flex;
+    animation: fade 1.5s;
+    height:50vh;
+    width:100%;
+}
+img.active{
+    display: block;
+}
+.btn1,.btn2{
+    border: none;
+    top:50%;
+    position: absolute;
+    transform: translateY(-50%);
+    background-color: hsla(0, 0%, 0%, 0.5);
+    color: white;
+    cursor: pointer;
+    padding: 10px 10px;
+    font-size: 2em;
+    
+}
+#btn1{
+    left:0;
+}
+#btn2{
+    right:0;
+}
+@keyframes fade {
+    from {opacity: 0.2} to {opacity: 1}    
+}
